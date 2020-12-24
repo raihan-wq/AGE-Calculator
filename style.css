@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Varela Round', sans-serif;
+}
+body{
+background-color: #35534F;
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.text-up{
+    
+    color: #EDEDF0;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.cal-box{
+    background-color:#EEEEEE;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 0px 7px 22px -1px rgba(59,46,46,0.75);
+-webkit-box-shadow: 0px 7px 22px -1px rgba(59,46,46,0.75);
+-moz-box-shadow: 0px 7px 22px -1px rgba(59,46,46,0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+p{
+    font-size: 20px;
+    color: green;
+    padding-bottom: 10px;
+    
+
+}
+input{
+    padding: 5px;
+    margin-bottom: 40px;
+    border : 3px solid #555
+}
+button{
+    padding: 10px 30px;
+    font-size: 20px;
+    border:none;
+    border-radius: 10px;
+    background-color:#4CAF50 ;
+    color: white;
+}
+.text-result{
+    margin-top: 10px;
+    background-color: #EEEEEE;
+    width: 70%;
+    padding: 5px;
+   border-radius: 5px;
+
+}
+
+.text-result p {
+    margin:10px;
+}
+.footer{
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+ }
+
+@media only screen and (max-width: 600px){
+   
+    input{
+        width: 110px;
+    }
+}
