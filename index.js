@@ -55,28 +55,73 @@
 
 // calculate age by js
 // take variable
-var current_date = document.getElementById('current_date');
+const current_date = document.getElementById('current_date');
 
-let  current_month = document.getElementById('current_month');
-let  current_year = document.getElementById('current_year');
+const  current_month = document.getElementById('current_month');
+const  current_year = document.getElementById('current_year');
 
-let  birth_day =  document.getElementById('birth_day');
-let birth_month =  document.getElementById('birth_month');
-let birth_year = document.getElementById('birth_year');
+const  birth_day =  document.getElementById('birth_day');
+const birth_month =  document.getElementById('birth_month');
+const birth_year = document.getElementById('birth_year');
 ///////////////
-var successme = document.getElementById('success');
-var resetme = document.getElementById('reset');
-var message = document.getElementById('here');
+const successme = document.getElementById('success');
+const resetme = document.getElementById('reset');
+const message = document.getElementById('here');
 ///////////
-let cD = Number(current_date.value);
+
+
+// let cD = Number(current_date.value);
+// let cM = Number(current_month.value);
+// let cY = Number(current_year.value);
+// let bD = Number(birth_day.value);
+// let bM = Number(birth_month.value);
+// let bY = Number(birth_year.value);
+
+
+
+// days of every months
+// var month = [31,28,31,30,31,30,31,31,30,31,30,31];
+// if current day is less than birth day follow the condition24\
+
+
+// if(bD> cD){
+//     // current date will = currnt day + add month day from bith month before one
+//     cD = cD + 30;
+//     // calculate currnt month
+//     cM = cM - 1;
+ 
+// }else{
+//      day = cD - bD;
+// }
+
+
+// if current month is less than birth month follow the condition
+
+
+// if(bM > cM){
+//       // current year
+//   cY = cY - 1;
+//   // calculate currnt month 
+//   cM = cM + 12; // we need to sub with birth month thts why we add 12 
+//   //as year = 12
+ 
+
+// }else{
+//      month1 = cM - bM;
+// }
+
+// date = current_date  - birth_day;// calculate actual day you spent in world
+// month1 = current_month - birth_month; // calculate actual month you spent in world
+
+ // calculate actual year you spent in world
+function showme(){
+    let day,month1,year;
+ let cD = Number(current_date.value);
 let cM = Number(current_month.value);
 let cY = Number(current_year.value);
 let bD = Number(birth_day.value);
 let bM = Number(birth_month.value);
 let bY = Number(birth_year.value);
-// days of every months
-// var month = [31,28,31,30,31,30,31,31,30,31,30,31];
-// if current day is less than birth day follow the condition24\
 if(bD> cD){
     // current date will = currnt day + add month day from bith month before one
     cD = cD + 30;
@@ -86,27 +131,17 @@ if(bD> cD){
 }else{
      day = cD - bD;
 }
-
-
-// if current month is less than birth month follow the condition
 if(bM > cM){
-      // current year
-  cY = cY - 1;
-  // calculate currnt month 
-  cM = cM + 12; // we need to sub with birth month thts why we add 12 
-  //as year = 12
- 
+    // current year
+cY = cY - 1;
+// calculate currnt month 
+cM = cM + 12; // we need to sub with birth month thts why we add 12 
+//as year = 12
+
 
 }else{
-     month1 = cM - bM;
+   month1 = cM - bM;
 }
-
-// date = current_date  - birth_day;// calculate actual day you spent in world
-// month1 = current_month - birth_month; // calculate actual month you spent in world
-
- // calculate actual year you spent in world
-function showme(){
-    var day,month1,year;
      day = cD - bD;
      month1 = cM - bM;
      year = cY - bY;
@@ -128,7 +163,7 @@ function showme(){
  }
 // juzment
 function eventHandeler(){
-    if(Number(current_date.value) && Number(current_month.value)&& Number(current_year.value)&& Number(birth_day.value)&& Number(birth_month.value)&& Number(birth_year.value)){
+    if(Number(current_date.value) && Number(current_month.value)&& Number(current_year.value)){
         showme();
     }else{
         alert("Please provide valid inputs");
